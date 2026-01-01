@@ -1,4 +1,9 @@
 package Exercices_Debutant_Inter;
+// Exercice 7: Tableaux et Boucles
+
+// Consigne: Crée un tableau de 10 entiers aléatoires entre 1 et 100. Affiche ce tableau, puis demande à l'utilisateur de deviner un des nombres du tableau. 
+// Indique-lui s'il a trouvé ou non.
+// Temps estimé: 35 minutes
 
 import java.util.Random;
 import java.util.Scanner;

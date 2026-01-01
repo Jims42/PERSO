@@ -1,4 +1,9 @@
 package Exercices_Debutant_Inter;
+// Exercice 8: Gestion Avancée des Exceptions
+
+// Consigne: Écris un programme qui lit un fichier texte contenant des nombres, un par ligne. Affiche la somme de ces nombres. 
+// Gère les exceptions si le fichier n'existe pas ou si une ligne ne contient pas un nombre valide.
+// Temps estimé: 40 minutes
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -26,7 +31,8 @@ public class Exercice_8 {
                     double nombre = Double.parseDouble(contenuLigne);
                     somme += nombre;
                 } catch (NumberFormatException e) {
-                    System.out.println("Erreur à la ligne " + ligne + " : '" + contenuLigne + "' n'est pas un nombre valide.");
+                    System.out.println(
+                            "Erreur à la ligne " + ligne + " : '" + contenuLigne + "' n'est pas un nombre valide.");
                 }
             }
 

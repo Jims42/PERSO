@@ -1,4 +1,8 @@
 package Exercices_Debutant_Inter;
+// Exercice 4: Tables de Multiplication
+
+// Consigne: Demande à l'utilisateur un nombre entre 1 et 10. Affiche la table de multiplication de ce nombre de 1 à 10. Utilise une boucle for.
+// Temps estimé: 25 minutes
 
 import java.util.Scanner;
 

@@ -1,4 +1,9 @@
 package Exercices_Debutant_Inter;
+// Exercice 3: Gestion des Exceptions
+
+// Consigne: Écris un programme qui demande à l'utilisateur d'entrer deux nombres entiers et affiche leur division. 
+// Gère les exceptions pour éviter les divisions par zéro et les entrées invalides.
+// Temps estimé: 20 minutes
 
 import java.util.Scanner;
 

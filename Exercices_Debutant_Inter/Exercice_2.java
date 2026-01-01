@@ -1,4 +1,8 @@
 package Exercices_Debutant_Inter;
+// Exercice 2: Tableaux
+
+// Consigne: Crée un tableau de 5 entiers. Demande à l'utilisateur de remplir ce tableau. Ensuite, affiche le tableau en ordre inverse.
+// Temps estimé: 20 minutes
 
 import java.util.Arrays;
 import java.util.Scanner;

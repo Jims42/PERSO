@@ -1,5 +1,10 @@
 package Exercices_Debutant_Inter;
+// Exercice 1: Boucles et Conditions
 
+// Consigne: Écris un programme qui demande à l'utilisateur un nombre entier entre 1 et 100. 
+// Si le nombre est pair, affiche 'Le nombre est pair'. Sinon, affiche 'Le nombre est impair'. 
+// Utilise une boucle pour redemander un nombre tant qu'il n'est pas dans l'intervalle [1, 100].
+// Temps estimé: 15 minutes
 
 import java.util.Scanner;
 
