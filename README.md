@@ -94,6 +94,24 @@ public static long calculerFactorielle(int n) {
     return f; // Renvoie le résultat au programme principal
 }
 ````
+### Exemple : Calcule Finobacci
+```java
+ static void Fibonacci(int nombre) {
+        int n1 = 0;
+        int n2 = 1;
+
+        for (int i = 0; i < nombre; i++) {
+
+            System.out.print(n1 + " ");
+
+            int n3 = n1 + n2;
+
+            n1 = n2;
+            n2 = n3;
+
+        }
+    }
+````
 ## 5. Algorithmes Utiles
 Trier : Arrays.sort(tab);
 
