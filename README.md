@@ -115,13 +115,7 @@ try (Scanner lecteur = new Scanner(new File("data.txt"))) {
 
 ---
 
-### Comment faire la mise à jour sur GitHub ?
 
-1.  Va sur ton **dépôt (repository)** sur GitHub.
-2.  Clique sur le fichier **README.md**.
-3.  Clique sur l'icône **crayon (Edit)** en haut à droite.
-4.  Colle le texte ci-dessus.
-5.  Descends en bas de la page et clique sur le bouton vert **"Commit changes"**.
 
 ### Pourquoi utiliser les trois accents graves (\`\`\`) ?
 Dans un fichier Markdown (comme le README), entourer ton code de ` ```java ` et ` ``` ` permet à GitHub de colorer automatiquement la syntaxe pour qu'elle soit lisible, comme dans un éditeur de code.
