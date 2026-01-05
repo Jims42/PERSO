@@ -94,7 +94,7 @@ public static long calculerFactorielle(int n) {
     return f; // Renvoie le résultat au programme principal
 }
 ````
-### Exemple : Calcule Finobacci
+### Exemple : Calcul Finobacci
 ```java
  static void Fibonacci(int nombre) {
         int n1 = 0;
