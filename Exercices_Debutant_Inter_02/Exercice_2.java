@@ -16,8 +16,9 @@ public class Exercice_2 {
 
         for (int i = 0; i < tableau.length; i++) {
             tableau[i] = nombres.nextInt(50) + 1;
-            // System.out.print(tableau[i]+" ");
+            // System.out.print(tableau[i] + " ");
         }
+        System.out.println();
         int nombreSaisie = 0;
         int tentative = 0;
         boolean trouve = false;
@@ -49,6 +50,10 @@ public class Exercice_2 {
         }
 
         System.out.println("Vous avez trouvez le nombre " + nombreSaisie + " en " + tentative + " essais");
+        System.out.print("Les nombres cachés étaient : ");
+        for (int n : tableau) {
+            System.out.print(n + " ");
+        }
 
         clavier.close();
 
