@@ -12,7 +12,7 @@ public class Exercice_1 {
         double notes=0;
         double somme=0;
         for (int i = 1; i <= 5;) {
-            System.out.print("Entrz la note "+i+" : ");
+            System.out.print("Entrez la note "+i+" : ");
             notes=clavier.nextDouble();
             if (notes<0||notes>20) {
                 System.out.println("ERREUR de saisie, Veuillez entrer une note entre 0 et 20");

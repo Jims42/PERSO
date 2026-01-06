@@ -13,7 +13,7 @@ try{
 System.out.println("Veuillez entrer le montant en EUROS que vous voulez convertir en DOLLARS");
 double sommeEur=clavier.nextDouble();
 double sommeConv=sommeEur*EUR_TO_DOLLARS;
-System.out.println("la conversion de "+sommeEur+" Euros en dollars est : "+sommeConv);
+System.out.println("la conversion de \u001B[1;4;34m"+sommeEur+"\u001B[1;4;0m Euros en dollars est : \u001B[1;3;4;32m"+sommeConv+"\u001B[1;3;4;0m");
 
 }catch(java.util.InputMismatchException e){
     System.out.println("ERRUR de saisie");
