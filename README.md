@@ -25,6 +25,36 @@ for (int i = tab.length - 1; i >= 0; i--) {
     System.out.println(tab[i]);
 }
 ```
+### Tri manuel croissant
+* **Public class void :** 
+  ```java
+  public static void AfficherTableau(int[] tab) {
+        for (int val : tab)
+            System.out.print(val + " ");
+        {
+            System.out.println();
+        }
+  ````
+  * **affichage tableau avant :** ` AfficherTableau(tab);`
+````java
+int n = tab.length;
+
+        for (int i = 0; i < n - 1; i++) {
+            int min = i;
+            for (int j = i + 1; j < n; j++) {
+                if (tab[j] < tab[min]) {
+                    min = j;
+                }
+            }
+            if (min != i) {
+                int temp = tab[i];
+                tab[i] = tab[min];
+                tab[min] = temp;
+            }
+        }
+````
+* **Affichage tableau trié après :** ` AfficherTableau(tab);`
+
 ## 2. Gestion des Erreurs (Try-Catch)
 ### Empêche le programme de planter en capturant les exceptions.
 ```java
