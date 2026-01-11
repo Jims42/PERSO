@@ -54,6 +54,32 @@ int n = tab.length;
         }
 ````
 * **Affichage tableau trié après :** ` AfficherTableau(tab);`
+  ### mettre un mot dans un tabkeau
+  * **exemple de mot avec ou sant Scanner :**
+  ```java
+  String mot = "";
+  mot = scanner.nextline();
+  char[] affichage = new char[mot.length()];
+  for (int i = 0; i < mot.length(); i++) {
+            affichage[i] = mot.charAt(i);
+  }
+  ```
+ * **Pour affichage espacé :**
+ on créé une variable `affichageEspace `
+ ```java
+  for (char c : affichage) {
+  affichageEspace += c + " ";
+  }
+  ```
+ * **Pour affichage masqué :**
+   ```java
+   for (int i = 0; i < mot.length(); i++) {
+    if (i == 0 || i == mot.length() - 1) {
+    affichage[i] = mot.charAt(i);
+   } else {
+    affichage[i] = '_';
+    }
+    ```
 
 ## 2. Gestion des Erreurs (Try-Catch)
 ### Empêche le programme de planter en capturant les exceptions.
