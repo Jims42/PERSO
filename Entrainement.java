@@ -1,10 +1,12 @@
 import java.util.Scanner;
 
+
+
 public class Entrainement {
 public static void main(String[] args) {
     Scanner clavier=new Scanner(System.in);
 
-System.out.println("Donner une valeur à a : ");
+System.out.println("\u001B[45mDonner une valeur à a :\u001B[0m ");
     
 int a =clavier.nextInt();
     
@@ -14,7 +16,7 @@ switch (a) {
         System.out.println(a<10);
                 break;
                 case 2:
-                    System.out.println("BRAVO");
+                    System.out.println(Couleurs.tableau1[4]+"BRAVO"+Couleurs.FIN);
                     break;
 
     default:
