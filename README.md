@@ -36,6 +36,7 @@ for (int i = tab.length - 1; i >= 0; i--) {
         }
   ````
   * **affichage tableau avant :** ` AfficherTableau(tab);`
+### TRI PAR SELECTION
 ````java
 int n = tab.length;
 
@@ -53,8 +54,26 @@ int n = tab.length;
             }
         }
 ````
+### TRI BULLE
+```java
+boolean echange;
+for (int i = 0; i < tab.length; i++) {
+ echange = false;
+
+for (int j = 0; j < tab.length - 1 - i; j++) {
+if (tab[j] > tab[j + 1]) {
+ int temp = tab[j];
+ tab[j] = tab[j + 1];
+tab[j + 1] = temp;
+echange = true;
+                }
+            }
+if (!echange)
+break;
+}
+```
 * **Affichage tableau trié après :** ` AfficherTableau(tab);`
-  ### mettre un mot dans un tabkeau
+  ### mettre un mot dans un tableau
   * **exemple de mot avec ou sant Scanner :**
   ```java
   String mot = "";
