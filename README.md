@@ -14,7 +14,7 @@ Ce document récapitule les points clés abordés lors de l'apprentissage de Jav
 
 ---
 
-## 1. Les Tableaux (Arrays)
+# 1. Les Tableaux (Arrays)
 Les indices commencent toujours à **0**.
 * **Déclaration :** `int[] tab = new int[5];`
 * **Dernier index :** `tab.length - 1`
@@ -25,7 +25,7 @@ for (int i = tab.length - 1; i >= 0; i--) {
     System.out.println(tab[i]);
 }
 ```
-# Tri manuel croissant
+## Tri manuel croissant
 * **Public class void :** 
   ```java
   public static void AfficherTableau(int[] tab) {
@@ -37,7 +37,7 @@ for (int i = tab.length - 1; i >= 0; i--) {
   ````
   * **affichage tableau avant :** ` AfficherTableau(tab);`
 
-# TRI PAR SELECTION
+## TRI PAR SELECTION
 ````java
 int n = tab.length;
 
@@ -55,7 +55,7 @@ int n = tab.length;
             }
         }
 ````
-# TRI BULLE
+## TRI BULLE
 ```java
 boolean echange;
 for (int i = 0; i < tab.length; i++) {
@@ -101,7 +101,7 @@ break;
     }
     ```
 
-## 2. Gestion des Erreurs (Try-Catch)
+# 2. Gestion des Erreurs (Try-Catch)
 ### Empêche le programme de planter en capturant les exceptions.
 ```java
 try {
@@ -112,7 +112,7 @@ try {
     System.out.println("Action terminée.");
 }
 ```
-## 3. Scanner et Boucles de Saisie
+# 3. Scanner et Boucles de Saisie
 ### Pour éviter une boucle infinie lors d'une erreur de saisie, il faut "vider" le tampon :
 ```java
 catch (InputMismatchException e) {
@@ -120,18 +120,18 @@ catch (InputMismatchException e) {
     clavier.nextLine(); // Nettoie le scanner
 }
 ```
-## 4. Les Méthodes (Fonctions)
+# 4. Les Méthodes (Fonctions)
 
 Une méthode est un bloc de code réutilisable qui effectue une tâche spécifique. Elle permet de fragmenter un gros programme en petits morceaux plus simples.
 
-### Structure d'une méthode
+## Structure d'une méthode
 `public static [Type de retour] nomDeLaMethode(Type parametre1, Type parametre2)`
 
 * **Type de retour** : Le type de donnée que la méthode "renvoie" à la fin (ex: `int`, `double`, `String`). Si elle ne renvoie rien, on utilise **`void`**.
 * **Paramètres** : Les informations dont la méthode a besoin pour travailler (les entrées).
 * **Return** : Le mot-clé pour envoyer le résultat final.
 
-### Exemple concret : Calculer une moyenne
+# Exemple concret : Calculer une moyenne
 ```java
 public static void main(String[] args) {
     double resultat = calculerMoyenne(15, 10); // Appel de la méthode
@@ -144,19 +144,46 @@ public static double calculerMoyenne(int note1, int note2) {
     return moyenne; // Sortie de la méthode
 }
 ````
+## recherche par dichotomie
+Exemple exercice : `Bichotomie.java`
+
+ **Le Concept**
+ La recherche par dichotomie réduit de moitié l'espace de recherche à chaque étape. Pour que cela fonctionne, le tableau doit impérativement être trié, ce qui est le cas ici.
+##
+**Algorithme (Pseudo-code)**
+Définir une borne `gauche` (0) et une borne `droite` (taille du tableau - 1).
+
+Tant que `gauche` est inférieur ou égal à `droite` :
+
+Calculer le milieu `m = (gauche + droite) / 2`.
+
+Si `élément[m]` est le prénom recherché, retourner `m`.
+
+Si le prénom recherché est "plus petit" que `élément[m]`, on cherche dans la partie gauche (`droite = m - 1`).
+
+Sinon, on cherche dans la partie droite (`gauche = m + 1`).
+
+Si on sort de la boucle sans avoir trouvé, retourner -1 (ou 0 selon votre énoncé, mais -1 est le standard en informatique car l'indice 0 est une position valide).
+##
+**Points clés du code :**
+Notez l'utilisation de la méthode .compareTo() qui est indispensable pour comparer des chaînes de caractères (Strings) en Java.
+* `cible.compareTo(table[milieu])`:
+  * Renvoie 0 si les chaînes sont identiques.
+  * Renvoie un nombre négatif si `nomRecherche` est avant `tabNoms[milieu]` dans l'alphabet.
+* Efficacité : Pour un tableau de 1 000 prénoms, il ne faut au maximum que 10 comparaisons pour trouver le résultat.
 ---
 
-## 4b. Les Méthodes (Fonctions)
+# 4b. Les Méthodes (Fonctions)
 
 Une méthode permet d'isoler un bloc de code pour le réutiliser.
 
-### Structure d'une méthode :
+## Structure d'une méthode :
 `public static [Type de retour] nomMethode([Paramètres])`
 
 * **Paramètres d'entrée** : Ce sont les données que tu donnes à la méthode pour qu'elle travaille.
 * **Valeur de sortie (return)** : C'est le résultat que la méthode te renvoie.
 
-### Exemple : Calcul de la Factorielle
+## Exemple : Calcul de la Factorielle
 ```java
 // Appel de la méthode dans le main
 long resultat = calculerFactorielle(5);
@@ -170,7 +197,7 @@ public static long calculerFactorielle(int n) {
     return f; // Renvoie le résultat au programme principal
 }
 ````
-### Exemple : Calcul Finobacci
+## Exemple : Calcul Finobacci
 ```java
 // Appel de la méthode dans le main
 Fibonacci(nombre);
@@ -186,13 +213,13 @@ Fibonacci(nombre);
         }
     }
 ````
-## 5. Algorithmes Utiles
+# 5. Algorithmes Utiles
 Trier : Arrays.sort(tab);
 
 Somme : ```java int somme = 0; for (int n : tab) somme += n;
 
 Aléatoire : Random gen = new Random(); int n = gen.nextInt(100) + 1;
-## 6. Lecture de Fichier
+# 6. Lecture de Fichier
 ```java
 try (Scanner lecteur = new Scanner(new File("data.txt"))) {
     while (lecteur.hasNextLine()) {
