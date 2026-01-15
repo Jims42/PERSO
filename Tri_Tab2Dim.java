@@ -1,8 +1,8 @@
 
 class Element {
 
-    char lettre;
-    int valeur;
+   public char lettre;
+    public int valeur;
 
     Element(char lettre, int valeur) {
         this.lettre = lettre;
