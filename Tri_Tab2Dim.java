@@ -16,7 +16,8 @@ public class Tri_Tab2Dim {
         Element[] donnees = {
                 new Element('C', 30),
                 new Element('A', 10),
-                new Element('B', 20)
+                new Element('B', 20),
+                new Element('D', 5)
         };
         // 2. Appel du Tri
         trier(donnees);
