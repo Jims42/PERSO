@@ -27,6 +27,8 @@ notes[0]=16;
 notes[1]=19;
 notes[2]=17;
 
-
+etudiant.setNotes(notes);
+etudiant.afficherDetail();
     }
+    
 }

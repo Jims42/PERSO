@@ -4,7 +4,7 @@ public class Etudiant {
     private String nom;
     private int age;
     private double[] notes;
-    double moyenne =0;
+   
 
     public Etudiant(){
     }
@@ -19,15 +19,18 @@ public class Etudiant {
     public int getAge(){
         return age;
     }
+    public void setNotes(double[] _notes){
+        this.notes=_notes;
+    }
     public double calculerMoyenne(){
-        
+         double moyenne =0;
         for (int i = 0; i < notes.length; i++) {
          moyenne += notes[i];
         }
 return moyenne/notes.length;
     }
     public void afficherDetail(){
-        System.out.println("Nom : "+this.nom+"\nAge : "+this.age+"\nMyenne : "+moyenne);
+        System.out.println("Nom : "+this.nom+"\nAge : "+this.age+"\nMyenne : "+this.calculerMoyenne());
     }
 
 }
