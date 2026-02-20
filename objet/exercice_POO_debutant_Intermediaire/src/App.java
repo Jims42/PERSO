@@ -25,7 +25,7 @@ public class App {
       carre.calculerAire();
       System.out.println("AIR ==> "+carre.calculerAire());
       System.out.println("-------------------------------EXO 5 ---------------------------------");
-      Chien chien1=new Chien("Scarle", 7);
+      Chien chien1=new Chien("Scarla", 7);
       Chien chien2=new Chien("kenza", 3);
       Chien chien3=new Chien("tyson", 9);
       ArrayList<Animal> listChien=new ArrayList<>();
