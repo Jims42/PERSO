@@ -21,12 +21,12 @@ public class Etudiant {
     public int getAge(){
         return age;
     }
-    public void setNotes(double[] _notes){
-        this.notes=_notes;
-    }
-//     public void setNotes(double[] notes) {
-//     this.notes = Arrays.copyOf(notes, notes.length); // Copie défensive
-// }
+    // public void setNotes(double[] _notes){
+    //     this.notes=_notes;
+    // }
+    public void setNotes(double[] notes) {
+    this.notes = Arrays.copyOf(notes, notes.length); // Copie défensive
+}
 
     public double calculerMoyenne(){
          double moyenne =0;
