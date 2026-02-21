@@ -6,6 +6,7 @@ public Chien(String _nom,int _age){
 }
 @Override
 public void faireDuBruit(){
+    super.faireDuBruit();
 System.out.println("Woof! Woof!");
 }
 }
