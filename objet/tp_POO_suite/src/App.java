@@ -6,7 +6,7 @@ public class App {
         System.out.println("--------------------------------------------- EXO 1----------------------------");
         Compte c1 = new Compte("toto", 5000);
         Compte c2 = new Compte("Grominet", 4500);
-        Compte c3 = new Compte("toti", 1250);
+        Compte c3 = new Compte("toti", -1250);
         c1.afficherResume();
         c2.afficherResume();
         c3.afficherResume();
